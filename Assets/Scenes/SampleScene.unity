@@ -153,18 +153,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceship: {fileID: 1074793838}
   spaceShipSprites:
-  - playerShip1_blue
-  - playerShip2_blue
-  - playerShip3_blue
-  - playerShip1_green
-  - playerShip2_green
-  - playerShip3_green
-  - playerShip1_orange
-  - playerShip2_orange
-  - playerShip3_orange
-  - playerShip1_red
-  - playerShip2_red
-  - playerShip3_red
+  - {fileID: 21300000, guid: 0641217de22c54ea4b626a5baea1b7bf, type: 3}
+  - {fileID: 21300000, guid: 0097da413fd9442898d10fc365bcaf3d, type: 3}
+  - {fileID: 21300000, guid: c7faa9e420454494195d4dfaad615cc5, type: 3}
+  - {fileID: 21300000, guid: b8044bbeb39284d3cbd80ddb0e3d11c4, type: 3}
+  - {fileID: 21300000, guid: 2cf7d1fed78ba43cd98da2daa15c35b0, type: 3}
+  - {fileID: 21300000, guid: e2fbfda71b29649778b55404734a6183, type: 3}
+  - {fileID: 21300000, guid: da0834cf724104a59924585ec8f059e9, type: 3}
+  - {fileID: 21300000, guid: 5d095f704093b4152b0cb8e1d19dafcd, type: 3}
+  - {fileID: 21300000, guid: 1dbd770544e8f41ebbee2cd03cf2e50c, type: 3}
+  - {fileID: 21300000, guid: c51416b4c7bb34701a1a9e313d049bcb, type: 3}
+  - {fileID: 21300000, guid: f06e151c9c8a74035a6c4d52bef73e15, type: 3}
+  - {fileID: 21300000, guid: e6652e005780b42d8aac42b4df519a7f, type: 3}
+  enemySprites:
+  - {fileID: 21300000, guid: 2332dc460025c44489142083afbf6491, type: 3}
+  - {fileID: 21300000, guid: 9cb8f3469eb1840cdab60fb843e50414, type: 3}
+  - {fileID: 21300000, guid: 05355837e0a5c4665a52507bd7a995ae, type: 3}
+  - {fileID: 21300000, guid: 8bc065e27a7ef44a1a9c123a4e858d90, type: 3}
+  - {fileID: 21300000, guid: 689720e2e5ba445319b400ab2c2393af, type: 3}
+  - {fileID: 21300000, guid: 639c7614205d247738ca2d0d94940b20, type: 3}
+  - {fileID: 21300000, guid: 1ce27c43808024b6c8a303168b5ab19d, type: 3}
+  - {fileID: 21300000, guid: b1a386bb649214f89a2ad9d0d0600705, type: 3}
+  - {fileID: 21300000, guid: 740dc72a83c7340f0860190387970501, type: 3}
+  - {fileID: 21300000, guid: f3332d98558d846df98820622d0b70d2, type: 3}
+  - {fileID: 21300000, guid: 153139c2f5fb34a16ac719d03db43078, type: 3}
+  - {fileID: 21300000, guid: f44434f6e4e53459ebf0dbf1bbf9c518, type: 3}
+  - {fileID: 21300000, guid: 8288358edd4914eb5b6f6f3109b4bb95, type: 3}
+  - {fileID: 21300000, guid: dfac21255639645858408468c31b6e33, type: 3}
+  - {fileID: 21300000, guid: 40f3cde8a9b2d468991d82da41aaeab2, type: 3}
+  - {fileID: 21300000, guid: 5bde1425d63de4438b6b39185cb30ffa, type: 3}
+  - {fileID: 21300000, guid: 69186461a24c84fa3a225fec6bd4e5b4, type: 3}
+  - {fileID: 21300000, guid: 99070bb3628a5466cb347dd92da64128, type: 3}
+  - {fileID: 21300000, guid: 7888051a7e5b24dbcb4af5490cc0769f, type: 3}
+  - {fileID: 21300000, guid: f2444068b316e4490aad95f61aa24162, type: 3}
+  Meteors: []
 --- !u!4 &238550362
 Transform:
   m_ObjectHideFlags: 0
@@ -533,11 +555,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1074793841}
-  - component: {fileID: 1074793840}
   - component: {fileID: 1074793839}
+  - component: {fileID: 1074793840}
   - component: {fileID: 1074793842}
   m_Layer: 0
-  m_Name: playerShip1_blue
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,10 +581,20 @@ MonoBehaviour:
   DownKey: 115
   LeftKey: 97
   RightKey: 100
-  FireKey1: 0
+  FireKey1: 49
   FireKey2: 0
   FireKey3: 0
   moveSpeed: 5
+  laserSprites:
+  - {fileID: 21300000, guid: 328512e65007948fb8af9c8f2579bbf7, type: 3}
+  - {fileID: 21300000, guid: be6a17c1241b64f9cb14c5e705b3fb68, type: 3}
+  - {fileID: 21300000, guid: a58a2c7472d3048c38d555fc1f92d494, type: 3}
+  - {fileID: 21300000, guid: 13c584749a284444591fbeb77e0b28d2, type: 3}
+  - {fileID: 21300000, guid: 3205f2592b123433b8b0ecda124feaf4, type: 3}
+  - {fileID: 21300000, guid: 299fd3fc9c4f74e38b3f33d76720a3bd, type: 3}
+  - {fileID: 21300000, guid: c0f8d575bb6f146d9b340a66d443fd44, type: 3}
+  - {fileID: 21300000, guid: 233da569ffb1d451f94c749a4f515dd1, type: 3}
+  - {fileID: 21300000, guid: 2e1595b5791ac44f3a3f363434bd3ee4, type: 3}
 --- !u!212 &1074793840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -624,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 1074793838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: -0.07}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

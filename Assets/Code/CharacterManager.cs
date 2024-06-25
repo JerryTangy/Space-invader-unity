@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class CharacterManager : MonoBehaviour
 {
-    public Sprite[] spriteList;
     private int index;
     private SpriteRenderer spaceShipSR;
+
+    private int money;
+
+    private int health;
 
     [Header("Player Config")]
     public GameObject spaceship;
@@ -36,13 +39,8 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    void spawnEnemies(){
-
-    }
-
     void ChangeSpaceship()
     {
     spaceShipSR.sprite = spaceShipSprites[index];
     }
-
 }  
